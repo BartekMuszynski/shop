@@ -63,12 +63,7 @@ class shop:
 
 
         def basket_dicard(self):
-                try :
-                        self.d = int(input("What product Would You like to discard ?Enter the number "))
-                        return self.d
-                except ValueError:
-                        print("Not in basket !")
-
+                self.d = int(input("What product Would You like to discard ?Enter the number "))
                 if self.d == 1:
                         bbasket["number of products "] -= 1
                         bbasket["total gross price"] -= products[0][1]
